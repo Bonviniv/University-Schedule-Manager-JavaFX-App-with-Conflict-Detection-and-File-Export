@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetoes.HorarioController">
+    <children>
+      <ScrollPane layoutY="73.0" prefHeight="427.0" prefWidth="1200.0">
+         <content>
+              <TableView fx:id="horario" onMouseClicked="#getSelected" prefHeight="435.0" prefWidth="1750.0">
+                  <columns>
+                      <TableColumn fx:id="curso" prefWidth="150.0" text="Curso" />
+                      <TableColumn fx:id="uc" prefWidth="150.0" text="Unidade Curricular" />
+                      <TableColumn fx:id="salaAtribuida" prefWidth="150.0" text="Sala atribuída à aula" />
+                      <TableColumn fx:id="turma" prefWidth="150.0" text="Turma" />
+                      <TableColumn fx:id="inscritosTurma" prefWidth="150.0" text="Inscritos no turno" />
+                  <TableColumn fx:id="diaSemana" prefWidth="150.0" text="Dia da semana" />
+                  <TableColumn fx:id="horaInicioAula" prefWidth="150.0" text="Hora início da aula" />
+                  <TableColumn fx:id="horaFimAula" prefWidth="150.0" text="Hora fim da aula" />
+                  <TableColumn fx:id="dataAula" prefWidth="150.0" text="Data da aula" />
+                  <TableColumn fx:id="caracteristicasSala" prefWidth="250.0" text="Características da sala pedida para a aula" />
+                      <TableColumn fx:id="turno" prefWidth="150.0" text="Turno" />
+                  </columns>
+                    </TableView>
+         </content>
+      </ScrollPane>
+          <Button fx:id="addFile_horarios" layoutX="413.0" layoutY="515.0" mnemonicParsing="false" onMouseClicked="#Add_horario" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #708090;" text="Adicionar" textFill="WHITE" />
+      <TextField fx:id="texto_pesquisa_horario" layoutX="28.0" layoutY="24.0" prefHeight="28.0" prefWidth="172.0" />
+      <Button fx:id="btn_pesquisa_horario" layoutX="211.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#search" text="Pesquisar" />
+      <MenuButton fx:id="btn_semana_ano_horario" layoutX="1017.0" layoutY="25.0" maxHeight="200.0" minHeight="-Infinity" mnemonicParsing="false" text="Semana do ano (1 - 52)">
+        <items>
+          <MenuItem fx:id="sa1h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana1" />
+          <MenuItem fx:id="sa2h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana2" />
+            <MenuItem fx:id="sa3h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana3" />
+            <MenuItem fx:id="sa4h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana4" />
+            <MenuItem fx:id="sa5h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana5" />
+            <MenuItem fx:id="sa6h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana6" />
+            <MenuItem fx:id="sa7h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana7" />
+            <MenuItem fx:id="sa8h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana8" />
+            <MenuItem fx:id="sa9h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana9" />
+            <MenuItem fx:id="sa10h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana10" />
+            <MenuItem fx:id="sa11h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana11" />
+            <MenuItem fx:id="sa12h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana12" />
+            <MenuItem fx:id="sa13h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana13" />
+            <MenuItem fx:id="sa14h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana14" />
+            <MenuItem fx:id="sa15h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana15" />
+            <MenuItem fx:id="sa16h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana16" />
+            <MenuItem fx:id="sa17h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana17" />
+            <MenuItem fx:id="sa18h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana18" />
+            <MenuItem fx:id="sa19h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana19" />
+            <MenuItem fx:id="sa20h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana20" />
+            <MenuItem fx:id="sa21h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana21" />
+            <MenuItem fx:id="sa22h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana22" />
+            <MenuItem fx:id="sa23h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana23" />
+            <MenuItem fx:id="sa24h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana24" />
+            <MenuItem fx:id="sa25h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana25" />
+            <MenuItem fx:id="sa26h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana26" />
+            <MenuItem fx:id="sa27h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana27" />
+            <MenuItem fx:id="sa28h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana28" />
+            <MenuItem fx:id="sa29h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana29" />
+            <MenuItem fx:id="sa30h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana30" />
+            <MenuItem fx:id="sa31h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana31" />
+            <MenuItem fx:id="sa32h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana32" />
+            <MenuItem fx:id="sa33h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana33" />
+            <MenuItem fx:id="sa34h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana34" />
+            <MenuItem fx:id="sa35h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana35" />
+            <MenuItem fx:id="sa36h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana36" />
+            <MenuItem fx:id="sa37h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana37" />
+            <MenuItem fx:id="sa38h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana38" />
+            <MenuItem fx:id="sa39h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana39" />
+            <MenuItem fx:id="sa40h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana40" />
+            <MenuItem fx:id="sa41h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana41" />
+            <MenuItem fx:id="sa42h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana42" />
+            <MenuItem fx:id="sa43h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana43" />
+            <MenuItem fx:id="sa44h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana44" />
+            <MenuItem fx:id="sa45h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana45" />
+            <MenuItem fx:id="sa46h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana46" />
+            <MenuItem fx:id="sa47h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana47" />
+            <MenuItem fx:id="sa48h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana48" />
+            <MenuItem fx:id="sa49h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana49" />
+            <MenuItem fx:id="sa50h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana50" />
+            <MenuItem fx:id="sa51h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana51" />
+            <MenuItem fx:id="sa52h" mnemonicParsing="false" onAction="#onclicked_semanaAnoHorario" text="Semana52" />
+        </items>
+      </MenuButton>
+      <MenuButton fx:id="btn_semana_sem_horario" layoutX="807.0" layoutY="25.0" mnemonicParsing="false" text="Semana do semestre (1 - 15)">
+         <items>
+            <MenuItem fx:id="ss1h" mnemonicParsing="false" onAction="#onclicked_semanahorario" text="Semana1" />
+            <MenuItem fx:id="ss2h" mnemonicParsing="false" onAction="#onclicked_semanahorario" text="Semana2" />
+            <MenuItem fx:id="ss3h" mnemonicParsing="false" onAction="#onclicked_semanahorario" text="Semana3" />
+            <MenuItem fx:id="ss4h" mnemonicParsing="false" onAction="#onclicked_semanahorario" text="Semana4" />
+            <MenuItem fx:id="ss5h" mnemonicParsing="false" onAction="#onclicked_semanahorario" text="Semana5" />
+            <MenuItem fx:id="ss6h" mnemonicParsing="false" onAction="#onclicked_semanahorario" text="Semana6" />
+            <MenuItem fx:id="ss7h" mnemonicParsing="false" onAction="#onclicked_semanahorario" text="Semana7" />
+            <MenuItem fx:id="ss8h" mnemonicParsing="false" onAction="#onclicked_semanahorario" text="Semana8" />
+            <MenuItem fx:id="ss9h" mnemonicParsing="false" onAction="#onclicked_semanahorario" text="Semana9" />
+            <MenuItem fx:id="ss10h" mnemonicParsing="false" onAction="#onclicked_semanahorario" text="Semana10" />
+            <MenuItem fx:id="ss11h" mnemonicParsing="false" onAction="#onclicked_semanahorario" text="Semana11" />
+            <MenuItem fx:id="ss12h" mnemonicParsing="false" onAction="#onclicked_semanahorario" text="Semana12" />
+            <MenuItem fx:id="ss13h" mnemonicParsing="false" onAction="#onclicked_semanahorario" text="Semana13" />
+            <MenuItem fx:id="ss14h" mnemonicParsing="false" onAction="#onclicked_semanahorario" text="Semana14" />
+            <MenuItem fx:id="ss15h" mnemonicParsing="false" onAction="#onclicked_semanahorario" text="Semana15" />
+         </items>
+      </MenuButton>
+      <MenuBar fx:id="columnEditor2" layoutX="293.0" layoutY="25.0">
+        <menus>
+          <Menu fx:id="columnEditor" mnemonicParsing="false" text="Filtrar colunas">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button fx:id="btn_gravar" layoutX="608.0" layoutY="515.0" mnemonicParsing="false" onMouseClicked="#gravar_horario" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #708090;" text="Gravar" textFill="WHITE" />
+      <Button layoutX="722.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#UpdateTable" text="Limpar" />
+      <Button fx:id="aulaSub" layoutX="479.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#switchStageAulaSub" text="adicionar aula" />
+      <Label fx:id="labelSelecionada" layoutX="572.0" layoutY="29.0" prefHeight="17.0" prefWidth="144.0" />
+      <Label fx:id="labelConfirmar" layoutX="387.0" layoutY="52.0" prefHeight="18.0" prefWidth="303.0" />
+      <Button fx:id="recarregarBtn" layoutX="815.0" layoutY="523.0" mnemonicParsing="false" onMouseClicked="#UpdateTable" text="Recarregar Horario" visible="false" />
+      <Button fx:id="heatMapButton" layoutX="336.0" layoutY="523.0" mnemonicParsing="false" onMouseClicked="#switchStageheatMap" text="heatmap" />
+      <Button layoutX="224.0" layoutY="523.0" mnemonicParsing="false" onMouseClicked="#switchStageConflito" text="Aulas Conflito" />
+    </children>
+</AnchorPane>

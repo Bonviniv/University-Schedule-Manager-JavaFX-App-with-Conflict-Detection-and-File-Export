@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetoes.HeatMapController">
+   <children>
+      <Button fx:id="button1" layoutX="84.0" layoutY="82.0" mnemonicParsing="false" onMouseClicked="#inscritosPreenAux" text="Iniciar" />
+      <Button fx:id="button2" layoutX="220.0" layoutY="306.0" mnemonicParsing="false" onMouseClicked="#ocupacaoPreen" text="Gerar Heatmap" />
+      <MenuButton layoutX="84.0" layoutY="166.0" mnemonicParsing="false" text="Semana do semestre (1 - 15)">
+        <items>
+            <MenuItem fx:id="ss1h" mnemonicParsing="false" onAction="#onclicked_semanahorario" text="Semana1" />
+            <MenuItem fx:id="ss2h" mnemonicParsing="false" onAction="#onclicked_semanahorario" text="Semana2" />
+            <MenuItem fx:id="ss3h" mnemonicParsing="false" onAction="#onclicked_semanahorario" text="Semana3" />
+            <MenuItem fx:id="ss4h" mnemonicParsing="false" onAction="#onclicked_semanahorario" text="Semana4" />
+            <MenuItem fx:id="ss5h" mnemonicParsing="false" onAction="#onclicked_semanahorario" text="Semana5" />
+            <MenuItem fx:id="ss6h" mnemonicParsing="false" onAction="#onclicked_semanahorario" text="Semana6" />
+            <MenuItem fx:id="ss7h" mnemonicParsing="false" onAction="#onclicked_semanahorario" text="Semana7" />
+            <MenuItem fx:id="ss8h" mnemonicParsing="false" onAction="#onclicked_semanahorario" text="Semana8" />
+            <MenuItem fx:id="ss9h" mnemonicParsing="false" onAction="#onclicked_semanahorario" text="Semana9" />
+            <MenuItem fx:id="ss10h" mnemonicParsing="false" onAction="#onclicked_semanahorario" text="Semana10" />
+            <MenuItem fx:id="ss11h" mnemonicParsing="false" onAction="#onclicked_semanahorario" text="Semana11" />
+            <MenuItem fx:id="ss12h" mnemonicParsing="false" onAction="#onclicked_semanahorario" text="Semana12" />
+            <MenuItem fx:id="ss13h" mnemonicParsing="false" onAction="#onclicked_semanahorario" text="Semana13" />
+            <MenuItem fx:id="ss14h" mnemonicParsing="false" onAction="#onclicked_semanahorario" text="Semana14" />
+            <MenuItem fx:id="ss15h" mnemonicParsing="false" onAction="#onclicked_semanahorario" text="Semana15" />
+        </items>
+      </MenuButton>
+      <MenuBar layoutX="301.0" layoutY="166.0" prefHeight="25.0" prefWidth="175.0">
+        <menus>
+          <Menu fx:id="salaList" mnemonicParsing="false" text="Salas">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

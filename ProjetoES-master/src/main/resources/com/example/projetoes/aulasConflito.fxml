@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="665.0" prefWidth="696.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetoes.AulasConflitoController">
+    <children>
+        <MenuBar fx:id="columnEditorCurso" layoutX="67.0" layoutY="44.0" prefHeight="26.0" prefWidth="198.0">
+            <menus>
+                <Menu fx:id="cursoList" mnemonicParsing="false" text="Curso">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <Button fx:id="iniciar" layoutX="198.0" layoutY="143.0" mnemonicParsing="false" prefWidth="66.0" text="Iniciar" />
+        <Label fx:id="labelPrincipal" layoutX="220.0" layoutY="14.0" text="Visualizar conflitos de aula" />
+        <Button fx:id="mostrarConflitos" layoutX="67.0" layoutY="143.0" mnemonicParsing="false" onMouseClicked="#calculateConflitos" text="Mostrar Conflitos" />
+        <MenuBar fx:id="columnEditorUC1" layoutX="67.0" layoutY="97.0" prefHeight="26.0" prefWidth="198.0" visible="false">
+             <menus>
+                <Menu fx:id="ucList" mnemonicParsing="false" text="UC">
+                   <items>
+                      <MenuItem mnemonicParsing="false" text="Close" />
+                   </items>
+                </Menu>
+             </menus>
+        </MenuBar>
+        <ScrollPane fx:id="graphScrollPane" layoutX="57.0" layoutY="217.0" prefHeight="380.0" prefWidth="580.0">
+            <!-- The graph container will be added dynamically -->
+        </ScrollPane>
+      <MenuBar fx:id="columnEditorUC2" layoutX="397.0" layoutY="97.0" prefHeight="26.0" prefWidth="198.0" visible="false">
+         <menus>
+            <Menu fx:id="ucList1" mnemonicParsing="false" text="UC">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Close" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Label fx:id="labelCurso1" layoutX="67.0" layoutY="80.0" text="Curso1" visible="false" />
+      <MenuBar fx:id="columnEditorCurso2" layoutX="397.0" layoutY="44.0" prefHeight="26.0" prefWidth="198.0" visible="false">
+         <menus>
+            <Menu fx:id="cursoList1" mnemonicParsing="false" text="Curso">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Close" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Label fx:id="labelCurso2" layoutX="397.0" layoutY="80.0" text="Curso2" visible="false" />
+    </children>
+</AnchorPane>

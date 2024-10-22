@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="533.0" prefWidth="895.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label id="infoSala" layoutX="336.0" layoutY="60.0" text="Informações da Sala">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label id="anfiteatro" alignment="CENTER" layoutX="24.0" layoutY="140.0" prefHeight="22.0" prefWidth="271.0" style="-fx-background-color: #DCDCDC; -fx-background-radius: 3; -fx-border-color: #C0C0C0; -fx-border-radius: 3;" text="Anfiteatro Aulas">
+         <padding>
+            <Insets bottom="2.0" left="8.0" right="8.0" top="2.0" />
+         </padding>
+      </Label>
+      <Label id="apoioTec" alignment="CENTER" layoutX="24.0" layoutY="171.0" prefHeight="22.0" prefWidth="271.0" style="-fx-background-color: #DCDCDC; -fx-background-radius: 3; -fx-border-color: #C0C0C0; -fx-border-radius: 3;" text="Apoio técnico eventos">
+         <padding>
+            <Insets bottom="2.0" left="8.0" right="8.0" top="2.0" />
+         </padding>
+      </Label>
+      <Label id="arq1" alignment="CENTER" layoutX="24.0" layoutY="202.0" prefHeight="22.0" prefWidth="271.0" style="-fx-background-color: #DCDCDC; -fx-background-radius: 3; -fx-border-color: #C0C0C0; -fx-border-radius: 3;" text="Arq1">
+         <padding>
+            <Insets bottom="2.0" left="8.0" right="8.0" top="2.0" />
+         </padding>
+      </Label>
+      <Label id="arq2" alignment="CENTER" layoutX="24.0" layoutY="234.0" prefHeight="22.0" prefWidth="271.0" style="-fx-background-color: #DCDCDC; -fx-background-radius: 3; -fx-border-color: #C0C0C0; -fx-border-radius: 3;" text="Arq2">
+         <padding>
+            <Insets bottom="2.0" left="8.0" right="8.0" top="2.0" />
+         </padding>
+      </Label>
+      <Label id="arq3" alignment="CENTER" layoutX="24.0" layoutY="265.0" prefHeight="22.0" prefWidth="271.0" style="-fx-background-color: #DCDCDC; -fx-background-radius: 3; -fx-border-color: #C0C0C0; -fx-border-radius: 3;" text="Arq3">
+         <padding>
+            <Insets bottom="2.0" left="8.0" right="8.0" top="2.0" />
+         </padding>
+      </Label>
+      <Label id="arq4" alignment="CENTER" layoutX="24.0" layoutY="296.0" prefHeight="22.0" prefWidth="271.0" style="-fx-background-color: #DCDCDC; -fx-background-radius: 3; -fx-border-color: #C0C0C0; -fx-border-radius: 3;" text="Arq4">
+         <padding>
+            <Insets bottom="2.0" left="8.0" right="8.0" top="2.0" />
+         </padding>
+      </Label>
+      <Label id="arq5" alignment="CENTER" layoutX="24.0" layoutY="327.0" prefHeight="22.0" prefWidth="271.0" style="-fx-background-color: #DCDCDC; -fx-background-radius: 3; -fx-border-color: #C0C0C0; -fx-border-radius: 3;" text="Arq5">
+         <padding>
+            <Insets bottom="2.0" left="8.0" right="8.0" top="2.0" />
+         </padding>
+      </Label>
+      <Label id="arq6" alignment="CENTER" layoutX="24.0" layoutY="358.0" prefHeight="22.0" prefWidth="271.0" style="-fx-background-color: #DCDCDC; -fx-background-radius: 3; -fx-border-color: #C0C0C0; -fx-border-radius: 3;" text="Arq6">
+         <padding>
+            <Insets bottom="2.0" left="8.0" right="8.0" top="2.0" />
+         </padding>
+      </Label>
+      <Label id="arq9" alignment="CENTER" layoutX="24.0" layoutY="389.0" prefHeight="22.0" prefWidth="271.0" style="-fx-background-color: #DCDCDC; -fx-background-radius: 3; -fx-border-color: #C0C0C0; -fx-border-radius: 3;" text="Arq9">
+         <padding>
+            <Insets bottom="2.0" left="8.0" right="8.0" top="2.0" />
+         </padding>
+      </Label>
+      <Label id="byod" alignment="CENTER" layoutX="24.0" layoutY="420.0" prefHeight="22.0" prefWidth="271.0" style="-fx-background-color: #DCDCDC; -fx-background-radius: 3; -fx-border-color: #C0C0C0; -fx-border-radius: 3;" text="BYOD (Bring Your Own Device)">
+         <padding>
+            <Insets bottom="2.0" left="8.0" right="8.0" top="2.0" />
+         </padding>
+      </Label>
+      <Label id="focusG" alignment="CENTER" layoutX="311.0" layoutY="140.0" prefHeight="22.0" prefWidth="271.0" style="-fx-background-color: #DCDCDC; -fx-background-radius: 3; -fx-border-color: #C0C0C0; -fx-border-radius: 3;" text="Focus Group">
+         <padding>
+            <Insets bottom="2.0" left="8.0" right="8.0" top="2.0" />
+         </padding>
+      </Label>
+      <Label id="horVisPub" alignment="CENTER" layoutX="311.0" layoutY="171.0" prefHeight="22.0" prefWidth="271.0" style="-fx-background-color: #DCDCDC; -fx-background-radius: 3; -fx-border-color: #C0C0C0; -fx-border-radius: 3;" text="Horário sala visível portal público">
+         <padding>
+            <Insets bottom="2.0" left="8.0" right="8.0" top="2.0" />
+         </padding>
+      </Label>
+      <Label id="labArqComp1" alignment="CENTER" layoutX="311.0" layoutY="202.0" prefHeight="22.0" prefWidth="271.0" style="-fx-background-color: #DCDCDC; -fx-background-radius: 3; -fx-border-color: #C0C0C0; -fx-border-radius: 3;" text="Laboratório de Arquitectura de Computadores I">
+         <padding>
+            <Insets bottom="2.0" left="8.0" right="8.0" top="2.0" />
+         </padding>
+      </Label>
+      <Label id="labArqComp2" alignment="CENTER" layoutX="311.0" layoutY="234.0" style="-fx-background-color: #DCDCDC; -fx-background-radius: 3; -fx-border-color: #C0C0C0; -fx-border-radius: 3;" text="Laboratório de Arquitectura de Computadores II">
+         <padding>
+            <Insets bottom="2.0" left="8.0" right="8.0" top="2.0" />
+         </padding>
+      </Label>
+      <Label id="labBasesEng" alignment="CENTER" layoutX="311.0" layoutY="265.0" prefHeight="22.0" prefWidth="271.0" style="-fx-background-color: #DCDCDC; -fx-background-radius: 3; -fx-border-color: #C0C0C0; -fx-border-radius: 3;" text="Laboratório de Bases de Engenharia">
+         <padding>
+            <Insets bottom="2.0" left="8.0" right="8.0" top="2.0" />
+         </padding>
+      </Label>
+      <Label id="labEletro" alignment="CENTER" layoutX="311.0" layoutY="296.0" prefHeight="22.0" prefWidth="271.0" style="-fx-background-color: #DCDCDC; -fx-background-radius: 3; -fx-border-color: #C0C0C0; -fx-border-radius: 3;" text="Laboratório de Electrónica">
+         <padding>
+            <Insets bottom="2.0" left="8.0" right="8.0" top="2.0" />
+         </padding>
+      </Label>
+      <Label id="labInfo" alignment="CENTER" layoutX="311.0" layoutY="327.0" prefHeight="22.0" prefWidth="271.0" style="-fx-background-color: #DCDCDC; -fx-background-radius: 3; -fx-border-color: #C0C0C0; -fx-border-radius: 3;" text="Laboratório de Informática">
+         <padding>
+            <Insets bottom="2.0" left="8.0" right="8.0" top="2.0" />
+         </padding>
+      </Label>
+      <Label id="labJornal" alignment="CENTER" layoutX="311.0" layoutY="358.0" prefHeight="22.0" prefWidth="271.0" style="-fx-background-color: #DCDCDC; -fx-background-radius: 3; -fx-border-color: #C0C0C0; -fx-border-radius: 3;" text="Laboratório de Jornalismo">
+         <padding>
+            <Insets bottom="2.0" left="8.0" right="8.0" top="2.0" />
+         </padding>
+      </Label>
+      <Label id="labRedesComp1" alignment="CENTER" layoutX="311.0" layoutY="389.0" prefHeight="22.0" prefWidth="271.0" style="-fx-background-color: #DCDCDC; -fx-background-radius: 3; -fx-border-color: #C0C0C0; -fx-border-radius: 3;" text="Laboratório de Redes de Computadores I">
+         <padding>
+            <Insets bottom="2.0" left="8.0" right="8.0" top="2.0" />
+         </padding>
+      </Label>
+      <Label id="labRedesComp2" alignment="CENTER" layoutX="311.0" layoutY="420.0" prefHeight="22.0" prefWidth="271.0" style="-fx-background-color: #DCDCDC; -fx-background-radius: 3; -fx-border-color: #C0C0C0;" text="Laboratório de Redes de Computadores II">
+         <padding>
+            <Insets bottom="2.0" left="8.0" right="8.0" top="2.0" />
+         </padding>
+      </Label>
+      <Label id="labTelecom" alignment="CENTER" layoutX="599.0" layoutY="140.0" prefHeight="22.0" prefWidth="271.0" style="-fx-background-color: #DCDCDC; -fx-background-radius: 3; -fx-border-color: #C0C0C0; -fx-border-radius: 3;" text="Laboratório de Telecomunicações">
+         <padding>
+            <Insets bottom="2.0" left="8.0" right="8.0" top="2.0" />
+         </padding>
+      </Label>
+      <Label id="salaMestra" alignment="CENTER" layoutX="599.0" layoutY="171.0" prefHeight="22.0" prefWidth="271.0" style="-fx-background-color: #DCDCDC; -fx-background-radius: 3; -fx-border-color: #C0C0C0; -fx-border-radius: 3;" text="Sala Aulas Mestrado">
+         <padding>
+            <Insets bottom="2.0" left="8.0" right="8.0" top="2.0" />
+         </padding>
+      </Label>
+      <Label id="salaMestraPlus" alignment="CENTER" layoutX="599.0" layoutY="202.0" prefHeight="22.0" prefWidth="271.0" style="-fx-background-color: #DCDCDC; -fx-background-radius: 3; -fx-border-color: #C0C0C0; -fx-border-radius: 3;" text="Sala Aulas Mestrado Plus">
+         <padding>
+            <Insets bottom="2.0" left="8.0" right="8.0" top="2.0" />
+         </padding>
+      </Label>
+      <Label id="salasNEE" alignment="CENTER" layoutX="599.0" layoutY="234.0" prefHeight="22.0" prefWidth="271.0" style="-fx-background-color: #DCDCDC; -fx-background-radius: 3; -fx-border-color: #C0C0C0; -fx-border-radius: 3;" text="Salas NEE">
+         <padding>
+            <Insets bottom="2.0" left="8.0" right="8.0" top="2.0" />
+         </padding>
+      </Label>
+      <Label id="salaProvas" alignment="CENTER" layoutX="599.0" layoutY="265.0" prefHeight="22.0" prefWidth="271.0" style="-fx-background-color: #DCDCDC; -fx-background-radius: 3; -fx-border-color: #C0C0C0; -fx-border-radius: 3;" text="Sala Provas">
+         <padding>
+            <Insets bottom="2.0" left="8.0" right="8.0" top="2.0" />
+         </padding>
+      </Label>
+      <Label id="salaReuniao" alignment="CENTER" layoutX="599.0" layoutY="296.0" prefHeight="22.0" prefWidth="271.0" style="-fx-background-color: #DCDCDC; -fx-background-radius: 3; -fx-border-color: #C0C0C0; -fx-border-radius: 3;" text="Sala Reunião">
+         <padding>
+            <Insets bottom="2.0" left="8.0" right="8.0" top="2.0" />
+         </padding>
+      </Label>
+      <Label id="salaArq" alignment="CENTER" layoutX="599.0" layoutY="327.0" prefHeight="22.0" prefWidth="271.0" style="-fx-background-color: #DCDCDC; -fx-background-radius: 3; -fx-border-color: #C0C0C0; -fx-border-radius: 3;" text="Sala de Arquitectura">
+         <padding>
+            <Insets bottom="2.0" left="8.0" right="8.0" top="2.0" />
+         </padding>
+      </Label>
+      <Label id="salaNormal" alignment="CENTER" layoutX="599.0" layoutY="358.0" prefHeight="22.0" prefWidth="271.0" style="-fx-background-color: #DCDCDC; -fx-background-radius: 3; -fx-border-color: #C0C0C0; -fx-border-radius: 3;" text="Sala de Aulas normal">
+         <padding>
+            <Insets bottom="2.0" left="8.0" right="8.0" top="2.0" />
+         </padding>
+      </Label>
+      <Label id="videoconf" alignment="CENTER" layoutX="599.0" layoutY="389.0" prefHeight="22.0" prefWidth="271.0" style="-fx-background-color: #DCDCDC; -fx-background-radius: 3; -fx-border-color: #C0C0C0; -fx-border-radius: 3;" text="Videoconferência">
+         <padding>
+            <Insets bottom="2.0" left="8.0" right="8.0" top="2.0" />
+         </padding>
+      </Label>
+      <Label id="atrio" alignment="CENTER" layoutX="599.0" layoutY="420.0" prefHeight="22.0" prefWidth="271.0" style="-fx-background-color: #DCDCDC; -fx-background-radius: 3; -fx-border-color: #C0C0C0; -fx-border-radius: 3;" text="Átrio">
+         <padding>
+            <Insets bottom="2.0" left="8.0" right="8.0" top="2.0" />
+         </padding>
+      </Label>
+      <Button id="botaoSair" layoutX="842.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: #FF4500;" text="X" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

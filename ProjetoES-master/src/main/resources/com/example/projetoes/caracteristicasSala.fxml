@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="503.0" prefWidth="690.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetoes.FXMLCaracteristicaController">
+    <children>
+      <ScrollPane layoutY="67.0" prefHeight="434.0" prefWidth="690.0">
+         <content>
+              <TableView fx:id="caracteristicas" editable="true" onMouseClicked="#getSelected" prefHeight="433.0" prefWidth="689.0">
+                  <columns>
+                      <TableColumn id="1" fx:id="edificio" maxWidth="172.5" prefWidth="172.5" text="Edifício" />
+                      <TableColumn id="2" fx:id="nomeSala" maxWidth="172.5" prefWidth="172.5" text="Nome Sala" />
+                      <TableColumn id="3" fx:id="capacidadeNormal" maxWidth="172.5" prefWidth="172.5" text="Capacidade Normal" />
+                      <TableColumn id="4" fx:id="capacidadeExame" maxWidth="172.5" prefWidth="172.5" text="Capacidade Exame" />
+                  </columns>
+              </TableView>
+         </content>
+      </ScrollPane>
+      <TextField fx:id="texto_pesquisa_salas" layoutX="20.0" layoutY="21.0" prefHeight="17.0" prefWidth="150.0" />
+      <Button fx:id="btn_pesquisa_salas" layoutX="183.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#search" text="Pesquisa" />
+    </children>
+</AnchorPane>

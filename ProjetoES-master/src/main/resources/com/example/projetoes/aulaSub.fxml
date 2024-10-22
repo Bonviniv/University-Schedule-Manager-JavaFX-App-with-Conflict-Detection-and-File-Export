@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane onMouseMoved="#init" prefHeight="657.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetoes.FXMLAulaSubController">    <children>
+        <MenuBar fx:id="columnEditorUC" layoutX="67.0" layoutY="122.0" prefHeight="26.0" prefWidth="198.0">
+            <menus>
+                <Menu fx:id="cursoList" mnemonicParsing="false" text="Curso">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <MenuBar layoutX="67.0" layoutY="223.0" prefHeight="26.0" prefWidth="92.0">
+            <menus>
+                <Menu fx:id="horarioE" mnemonicParsing="false" text="Inicio" />
+            </menus>
+        </MenuBar>
+      <DatePicker fx:id="dataInicial" layoutX="67.0" layoutY="173.0" onAction="#getDateI" prefHeight="26.0" prefWidth="198.0" promptText="Data inicial" />
+      <DatePicker fx:id="dataFinal" layoutX="307.0" layoutY="173.0" onAction="#getDateF" prefHeight="26.0" prefWidth="205.0" promptText="Data final" />
+      <Label fx:id="labelDataI" layoutX="67.0" layoutY="157.0" prefHeight="17.0" prefWidth="174.0" />
+      <Label fx:id="labelDataF" layoutX="307.0" layoutY="156.0" prefHeight="18.0" prefWidth="198.0" />
+      <MenuBar layoutX="67.0" layoutY="261.0" prefHeight="26.0" prefWidth="198.0">
+        <menus>
+          <Menu fx:id="salaList" mnemonicParsing="false" text="Salas de preferência">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <MenuButton fx:id="pref1" layoutX="420.0" layoutY="224.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="90.0" text="Selecione">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </MenuButton>
+      <MenuButton fx:id="pref2" layoutX="420.0" layoutY="262.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" text="Selecione">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </MenuButton>
+      <MenuButton fx:id="pref3" layoutX="420.0" layoutY="299.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" text="Selecione">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </MenuButton>
+      <Label layoutX="314.0" layoutY="228.0" prefHeight="18.0" prefWidth="92.0" text="Ordem de Pref :" />
+      <Label layoutX="406.0" layoutY="228.0" text="1" />
+      <Label layoutX="406.0" layoutY="266.0" text="2" />
+      <Label layoutX="404.0" layoutY="303.0" text="3" />
+      <Label fx:id="labelPrincipal" layoutX="215.0" layoutY="20.0" text="Adicionar aula">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <MenuBar layoutX="67.0" layoutY="298.0" prefHeight="26.0" prefWidth="198.0">
+        <menus>
+          <Menu fx:id="salaListE" mnemonicParsing="false" text="Salas não aceitáveis">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button fx:id="butnInit" layoutX="67.0" layoutY="68.0" mnemonicParsing="false" onMouseClicked="#init" prefWidth="66.0" text="Iniciar" />
+      <Button layoutX="241.0" layoutY="347.0" mnemonicParsing="false" onMouseClicked="#search" text="Buscar sugestões" />
+      <TableView fx:id="horario" layoutX="33.0" layoutY="632.0" prefHeight="0.0" prefWidth="548.0" visible="false">
+        <columns>
+          <TableColumn fx:id="uc" prefWidth="76.0" text="UC" visible="false" />
+          <TableColumn fx:id="salaAtribuida" prefWidth="79.0" text="Sala" />
+            <TableColumn fx:id="dataAula" text="Data" />
+            <TableColumn fx:id="horaInicioAula" prefWidth="106.0" text="Inicio" />
+            <TableColumn fx:id="horaFimAula" prefWidth="101.0" text="Fim" />
+            <TableColumn fx:id="curso" prefWidth="104.0" text="Curso" />
+        </columns>
+      </TableView>
+      <MenuBar fx:id="columnEditorUC1" layoutX="306.0" layoutY="122.0" prefHeight="26.0" prefWidth="206.0">
+         <menus>
+            <Menu fx:id="ucList" mnemonicParsing="false" text="UC">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Close" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <MenuBar layoutX="169.0" layoutY="224.0" prefHeight="26.0" prefWidth="92.0">
+         <menus>
+            <Menu fx:id="horarioEF" mnemonicParsing="false" text="Final" />
+         </menus>
+      </MenuBar>
+      <Label layoutX="105.0" layoutY="206.0" prefHeight="18.0" prefWidth="128.0" text="horarios de exclusão">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="labelAvisoData" layoutX="360.0" layoutY="351.0" />
+      <TableView fx:id="horarioSuj" layoutX="33.0" layoutY="376.0" onMouseClicked="#getSelected" prefHeight="244.0" prefWidth="548.0">
+        <columns>
+          <TableColumn fx:id="salaSuj" prefWidth="97.20000457763672" text="Sala" />
+          <TableColumn fx:id="horaSuj" prefWidth="112.39999389648438" text="Inicio" />
+            <TableColumn fx:id="horaFimSuj" prefWidth="92.79998779296875" text="Fim" />
+            <TableColumn fx:id="dataSuj" prefWidth="114.4000244140625" text="Data" />
+            <TableColumn fx:id="diaSemanaSuj" prefWidth="148.20004272460938" text="Dia da semana" />
+        </columns>
+      </TableView>
+      <Label fx:id="labelSec" layoutX="195.0" layoutY="72.0" prefHeight="17.0" prefWidth="257.0" visible="false" />
+      <Button fx:id="btnAdd" layoutX="387.0" layoutY="347.0" mnemonicParsing="false" onMouseClicked="#adicionarAula" prefHeight="25.0" prefWidth="191.0" text="Adicionar em slot selecionado" visible="false" />
+      <Label fx:id="labelCurso" layoutX="181.0" layoutY="72.0" prefHeight="18.0" prefWidth="90.0" visible="false" />
+      <Label fx:id="labelUc" layoutX="278.0" layoutY="71.0" prefHeight="18.0" prefWidth="90.0" visible="false" />
+      <Label fx:id="labelTurma" layoutX="201.0" layoutY="85.0" visible="false" />
+      <Label fx:id="labelTurno" layoutX="273.0" layoutY="85.0" visible="false" />
+      <Label fx:id="labelInscritos" layoutX="346.0" layoutY="85.0" visible="false" />
+      <TableView fx:id="horarioControlo" layoutX="43.0" layoutY="642.0" prefHeight="0.0" prefWidth="548.0" visible="false">
+         <columns>
+            <TableColumn fx:id="uc1" prefWidth="76.0" text="UC" visible="false" />
+            <TableColumn fx:id="salaAtribuida1" prefWidth="79.0" text="Sala" />
+            <TableColumn fx:id="dataAula1" text="Data" />
+            <TableColumn fx:id="horaInicioAula1" prefWidth="106.0" text="Inicio" />
+            <TableColumn fx:id="horaFimAula1" prefWidth="101.0" text="Fim" />
+            <TableColumn fx:id="curso1" prefWidth="104.0" text="Curso" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
