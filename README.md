@@ -1,2 +1,2 @@
-# ES
+# University Schedule Manager: JavaFX App with Conflict Detection and File Export
 The project is a schedule management application designed for Iscte, developed in Java and JavaFX. It allows users to upload, view, and manage class schedules and room allocations using data from CSV files. Key features include filtering and sorting schedules, suggesting alternative class times, handling room availability, and visualizing schedule conflicts. The project also supports saving schedules in CSV and JSON formats. The software must follow Scrum methodology for development, utilizing tools like Git for version control and JUnit for testing​
